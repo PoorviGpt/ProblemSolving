@@ -45,7 +45,7 @@ class Solution {
                 bottomCount++;
             }
         } 
-        System.out.println("count and bottomCount "+count+" "+ bottomCount);
+        
         if(canTopSame && (bottomCount==0 || count<bottomCount))
             return count;
         else if(canBottomSame && (count==0 || bottomCount<count))
