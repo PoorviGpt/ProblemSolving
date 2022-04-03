@@ -33,7 +33,6 @@ class Solution {
             j--;
         }
         
-        //System.out.println("mismatchCount "+mismatchCount);
         if(mismatchCount > 1)
             return false;
         return true;
