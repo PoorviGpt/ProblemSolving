@@ -28,7 +28,7 @@ class Solution {
             res[c]=nums2[n];
             n++;c++;
         }
-        System.out.println("result "+Arrays.toString(res));
+        //System.out.println("result "+Arrays.toString(res));
          int pos=(m+n)/2;
         if((m+n)%2==0)
         {
