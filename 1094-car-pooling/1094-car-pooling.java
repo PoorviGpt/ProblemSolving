@@ -8,7 +8,7 @@ class Solution {
         int sum = 0;
         for (int key : map.keySet()) {
             sum += map.get(key);
-            map.put(key, sum);
+            //map.put(key, sum);
             if (sum > capacity) return false;
         }
         return true;
