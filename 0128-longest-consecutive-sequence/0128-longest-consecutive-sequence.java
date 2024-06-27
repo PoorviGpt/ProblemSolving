@@ -11,21 +11,19 @@ class Solution {
             int seqLength=1;
             
             int num=nums[i];
-            while(mp.contains(num-1))
+            while(mp.contains(--num))
             {
                seqLength++;
-               mp.remove(num-1);
-               num--; 
+               mp.remove(num);
             }
             num=nums[i];
-            while(mp.contains(num+1))
+            while(mp.contains(++num))
             {
                seqLength++;
-               mp.remove(num+1);
-               num++; 
+               mp.remove(num);
             }
-            if(seqLength > maxSeq)
-                maxSeq=seqLength;
+            
+            maxSeq=Math.max(seqLength, maxSeq);
         }
         return maxSeq;
     }
